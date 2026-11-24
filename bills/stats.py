@@ -137,6 +137,7 @@ class Statistics:
         # X es una lista de listas de dos valors (objeto, taxas)
         dic_productos = dict(sorted( dic_productos.items(), key=lambda x: x[1][1], reverse=order_type))
 
+        # Vamos añadiendo los valors en forma de tuplas (objeto, total_tasas)
         prod_tax = []
         for valor in dic_productos.values():
             prod_tax.append(tuple(valor))
